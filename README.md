@@ -28,6 +28,11 @@ https://docs.espressif.com/projects/esp-iot-solution/en/latest/hw-reference/ESP-
 
 My ESP32 board is a third-party dev board. The brand is TOUGLESY. I bought it from Taobao, and Fig. 6, the pin description, is from the Taobao page.
 
+If you also want Serial printing, I assume yes, then connect another USB cable from computer directly to ESP32 dev board.
+![USB-ESP32](./images/Connection-Serial-Monitor-USB.jpg)
+*Fig. 7 Overview after adding another USB cable (yellow) for Serial Monitor and Uploading.*
+
+
 ## Software
 
 VS Code + PlatformIO
@@ -37,6 +42,8 @@ Two main files:
 ./platform.ini
 ./src/main.cpp
 ```
+
+If you want to find out what COM your USB cable is using, on VS Code's bottom status bar, there's a plug icon with text `Auto`. Press that would give you a list of COMs, and you can easily guess the right one if there's only one USB cable plugged into the computer. In my case, I am using COM10 for the yellow cable both for Serial printing and uploading.
 
 ## Debugging Screenshot
 
